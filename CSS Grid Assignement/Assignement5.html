@@ -14,10 +14,10 @@
     body{
         display: grid;
         grid-template-areas: 
-        "header header header"
-        "nav article article"
-        "ads footer footer";
-        grid-template-columns: 20% 80%;
+        "nav header header"
+        "nav article ads"
+        "nav footer footer";
+        grid-template-columns: 20% 60% 20%;
         grid-template-rows: 20vh 60vh 20vh;
         grid-gap: 5px;
         height: 90vh;
@@ -25,7 +25,7 @@
         overflow: hidden;
     }
     header,footer,article,nav,div{
-        background: rgb(16, 240, 12);
+        background: rgb(237, 233, 8);
     }
     #pageheader{
         grid-area: header;
