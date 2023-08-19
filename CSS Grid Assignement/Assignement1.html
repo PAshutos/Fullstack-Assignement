@@ -6,6 +6,11 @@
     <title>Assignement</title>
 </head>
 <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
     body{
         display: grid;
         grid-template-areas: 
@@ -13,10 +18,11 @@
         "nav article ads"
         "nav footer footer";
         grid-template-columns: 30% 40% 30%;
-        grid-template-rows: 60px 1fr 60px;
+        grid-template-rows: 10vh 80vh 10vh;
         grid-gap: 5px;
-        margin: 0;
-        height: 100vh;
+        height: 90vh;
+        text-align: center;
+        overflow: hidden;
     }
     header,footer,article,nav,div{
         padding: 10px;
