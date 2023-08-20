@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignement</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        display: grid;
+        grid-template-areas: 
+        "nav header header"
+        "nav article ads"
+        "nav footer footer";
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 20vh 60vh 20vh;
+        grid-gap: 5px;
+        height: 90vh;
+        text-align: center;
+        overflow: hidden;
+    }
+    header,footer,article,nav,div{
+        background: rgb(237, 233, 8);
+    }
+    #pageheader{
+        grid-area: header;
+    }
+    #pagefooter{
+        grid-area: footer;
+    }
+    #mainArticle{
+        grid-area: article;
+    }
+    #mainNav{
+        grid-area: nav;
+    }
+    #siteAds{
+        grid-area: ads;
+    }
+</style>
+<body>
+    <Header id="pageheader">Header</Header>
+    <article id="mainarticle">Article</article>
+    <nav id="mainNav">Nav</nav>
+    <div id="siteAds">Ads</div>
+    <footer id="pagefooter">Footer</footer>
+</body>
+</html>
