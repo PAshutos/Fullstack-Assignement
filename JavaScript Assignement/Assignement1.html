@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Java script assignement</title>
+    <script>
+        function show() {
+            let inputOne = document.getElementById("inputOne");
+            let inputTwo = document.getElementById("inputTwo");
+
+            let inputOneValue = inputOne.value;
+            let inputTwoValue = inputTwo.value;
+
+            let mytable = document.getElementById("table");
+            let elementRow = document.createElement("tr");
+            let tableDataOne = document.createElement("td");
+            let tableDataTwo = document.createElement("td");
+
+            tableDataOne.innerHTML = inputOneValue;
+            tableDataTwo.innerHTML = inputTwoValue;
+
+            elementRow.append(tableDataOne);
+            elementRow.append(tableDataTwo);
+
+            mytable.append(elementRow);
+        }
+    </script>
+</head>
+
+<body>
+    <div class="div" id="div">
+        <label for="">Enter Id</label>
+
+        <input type="text" id="inputOne" name="" placeholder="Enter Id" />
+
+        <br />
+        <br />
+
+        <label for="">Enter Name</label>
+        <input type="text" id="inputTwo" name="" placeholder="Enter Name" />
+
+        <br />
+        <br />
+
+        <input type="button" value="add" onclick="show()" />
+
+        <table id="table" border="1">
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
